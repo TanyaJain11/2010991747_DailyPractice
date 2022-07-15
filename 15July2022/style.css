@@ -1,0 +1,37 @@
+.progress{
+    margin-top:80px;
+}
+.nav{
+    background-color: rgb(234, 243, 243);
+    height: 60px;
+    margin: 10px 5px 10px 5px;
+    width: 90%;
+    padding: 0px;
+    top: 3px;
+    position: fixed;
+    border-radius: 10px;;
+}
+nav{
+    margin-top: 20px;
+    
+}
+nav a{
+    color:rgb(197, 13, 13);
+    text-decoration: none;
+    font-size: medium;
+    font-weight:bolder;
+    /* border:3px solid black; */
+    border-radius:10px;
+    margin:20px;
+    /* background-color: rgb(245, 242, 222);     */
+}
+.txt{
+    color:white;
+}
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background:rgba(10, 11, 12, 0.37), 0.151);
+ }
