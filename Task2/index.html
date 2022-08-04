@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+        background: linear-gradient(to bottom,rgba(131, 221, 188, 0.708), rgba(102, 166, 206, 0.795), rgba(105, 105, 235, 0.526));background-repeat:no-repeat;background-size: cover ;height: 100vh;
+       
+    
+    }
+    
+    </style>
+
+
+<script>
+function fnclick(){
+
+let a =document.getElementById('num').value;
+ a=Number(a);
+
+ var ele = "<br>even numbers are: <br>"
+
+ for(var i=2;i<=a;i++){
+    if(i%2==0){
+        // document.getElementById('p').innerText = i;
+        ele+=i+"<br>"
+    }
+        document.getElementById('p').innerHTML = ele;
+
+
+
+    
+ }
+
+
+
+}
+
+
+
+</script>
+</head>
+<body>
+    
+
+
+Enter a number to generate a square shape:
+<br>
+<input type="number" name="n1" id="num">
+<br><br>
+<button onclick="fnclick()">Generate</button>
+<p id="p"></p>
+
+
+
+
+
+</body>
+</html>

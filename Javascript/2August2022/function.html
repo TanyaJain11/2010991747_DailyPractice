@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fnClick()" > Click </button>
+    <p id="p1"></p>
+    N1<input type="text" name="n1" id="n1" > <br>
+    N2<input type="text" name="n2" id="n2">
+            <script>
+        function fnClick(){
+            // alert("Hi , How Are You ?");
+            // document.getElementById("p1").innerHTML="hello";
+            var n1=document.getElementById("n1").value;
+
+            var n2=document.getElementById("n2").value;
+
+            if(!isNaN(n1+n2)){
+                n1 = Number(n1);
+                n2 =  Number(n2);
+            document.getElementById("p1").innerHTML = n1+n2;
+            }else{
+            document.getElementById("p1").innerHTML = "<span style='color:red'>  Please enter numeric value</span>";
+            
+            }
+
+            // var n1 = "5";
+            // var n2 = "5";
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+<!-- NUMBERS BETWEEN N AND R DIVIDED BY K -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+        background: linear-gradient(to bottom,rgba(131, 221, 188, 0.708), rgba(102, 166, 206, 0.795), rgba(105, 105, 235, 0.526));background-repeat:no-repeat;background-size: cover ;height: 300vh;
+       
+    
+    }
+    
+    </style>
+
+
+
+</head>
+<body>
+    
+
+
+Enter a number to generate a square shape:
+<br>
+<input type="number" name="n1" id="n1">
+<br><br>
+<input type="number" name="n2" id="n2">
+<br><br>
+<input type="number" name="n3" id="n3">
+<br><br>
+
+<button onclick="fnclick()">Generate</button>
+<p id="p"></p>
+
+
+
+
+<script>
+    function fnclick(){
+    let n =document.getElementById('n1').value;
+    let r =document.getElementById('n2').value;
+    let k =document.getElementById('n3').value;
+     a=Number(n);
+     b=Number(r);
+     c=Number(k);
+
+     var ele = "<br>numbers divided by k are: <br>";
+
+    
+     for(var i=a;i<=b;i++){
+        if(i%c==0){;
+            ele+=i+"<br>"
+        }
+            document.getElementById('p').innerHTML = ele;
+    
+    
+    
+        
+     }
+    
+    
+    
+    }
+    
+    
+    
+    </script>
+</body>
+</html>
