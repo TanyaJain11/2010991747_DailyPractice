@@ -13,9 +13,12 @@
     <style>
         body{
         background: linear-gradient(to bottom,rgba(131, 221, 188, 0.708), rgba(102, 166, 206, 0.795), rgba(105, 105, 235, 0.526));background-repeat:no-repeat;background-size: cover ;height: 300vh;
-       
+        }
+        #p{
+            justify-content:center;
+        }
     
-    }
+    
     
     </style>
 
@@ -24,24 +27,30 @@
 </head>
 <body>
     
-
+<div style="text-align: center;">
 
 Enter a number to generate a square shape:
 <br>
-<input type="number" name="n1" id="n1">
+<input type="text" name="n1" id="n1">
 <br><br>
 <button onclick="fnclick()">Generate</button>
-<div id="p" style="padding:20px; margin:10px">
+<button onclick="fnclick1()">Reset</button>
+<div id="p" style="padding:20px; margin:10px;">
+</div>
 </div>
 
 
 
 <script>
     function fnclick(){
-    // document.getElementById('p').removeAttribute("style");
+    //document.getElementById('p').removeAttribute("style");
+    
     let n =document.getElementById('n1').value;
-     n=Number(n);
-     var sum=0;
+    //  n=Number(n);
+    if(isNaN(n)){
+        alert("not a number");
+    }else{
+        var sum=0;
      var cnt=0;
      while(n>0){
        
@@ -59,8 +68,7 @@ Enter a number to generate a square shape:
 document.getElementById('p').style.height = sum +"px";
 document.getElementById('p').style.width = sum +"px";
 document.getElementById('p').style.backgroundColor = "red";
-document.getElementById('p').style.transition = "all 4s";
-document.getElementById('p').style.transitionTimingFunction = "all 4s";
+document.getElementById('p').style.transition = "all 2s";
 document.getElementById('p').style.borderRadius = "50px";
 
 
@@ -68,11 +76,30 @@ document.getElementById('p').style.borderRadius = "50px";
 
     
     
+    }
+     
     
         
      }
     
-    
+     function fnclick1(){
+
+
+let val = document.getElementById('n1');
+val.value=parseInt(0);
+
+// document.getElementById('num').reset();
+document.getElementById('p').style.height= "0px";
+document.getElementById('p').style.width= "0px";
+document.getElementById('p').style.background = "0px";
+document.getElementById('p').style.transition="all 2s";
+document.getElementById('p').style.borderRadius= "0px";
+// document.getElementById('p').reset();
+
+
+
+
+}
     
     
     
