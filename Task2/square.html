@@ -12,11 +12,24 @@
 
     <style>
         body{
-        background: linear-gradient(to bottom,rgba(131, 221, 188, 0.708), rgba(102, 166, 206, 0.795), rgba(105, 105, 235, 0.526));background-repeat:no-repeat;background-size: cover ;height: 300vh;
+        background: linear-gradient(to bottom,rgba(131, 221, 188, 0.708), rgba(102, 166, 206, 0.795), rgba(105, 105, 235, 0.526));background-repeat:no-repeat;background-size: cover ;height: 100vh;
         }
         #p{
             justify-content:center;
         }
+        #n1{
+            margin:20px;
+            width: 600px;
+            height: 40px;
+            background-color: white;
+        }
+        .btn{
+            background-color: #df851d;
+            /* padding: 10px; */
+            width: 188px;
+            height: 34px;
+}
+        
     
     
     
@@ -27,15 +40,19 @@
 </head>
 <body>
     
-<div style="text-align: center;">
+<div style="text-align: center;
+padding: 20px;
+font-size: 30px;
+font-weight: bolder;
+">
 
 Enter a number to generate a square shape:
 <br>
-<input type="text" name="n1" id="n1">
+<input type="text" name="n1" id="n1" placeholder="enter number">
 <br><br>
-<button onclick="fnclick()">Generate</button>
-<button onclick="fnclick1()">Reset</button>
-<div id="p" style="padding:20px; margin:10px;">
+<button class="btn" onclick="fnclick()">Generate</button>
+<button class="btn" onclick="fnclick1()">Reset</button>
+<div id="p" style="margin:30px auto;">
 </div>
 </div>
 
@@ -69,7 +86,7 @@ document.getElementById('p').style.height = sum +"px";
 document.getElementById('p').style.width = sum +"px";
 document.getElementById('p').style.backgroundColor = "red";
 document.getElementById('p').style.transition = "all 2s";
-document.getElementById('p').style.borderRadius = "50px";
+document.getElementById('p').style.borderRadius = radius+ "px";
 
 
      }
